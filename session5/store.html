@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopsy</title>
+    <style>
+        body{
+            background-color: #faf3e0;
+
+            
+          
+        }
+        #container{
+           margin: 10px;
+           padding: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 100px;
+
+           
+          
+        }
+      
+        .product-card {
+           
+           padding: 20px;
+            background: #ffffff;
+             border: 2px solid rgb(230, 219, 219);
+
+          border-radius: 10px;
+    box-shadow: 5px 4px 2px wheat;
+    text-align: center;
+    flex: 1 1 300px; 
+    max-width: 300px;
+    height: 400px;
+    cursor: pointer;
+   
+    
+}
+.product-card:hover{
+    background-color: #e09483;
+    transition-duration: 2s;
+} 
+
+.product-card img {
+    cursor: pointer;
+   min-width: 300PX;      /* Ensures the image fills the card width */
+   max-height: 200px;    /* Sets a fixed height for all images */
+    object-fit: cover; /* Crops or scales the image to fill the area while preserving aspect ratio */
+}
+.product-card img:hover{
+    background-color: #e09483;
+    transition-duration: 2s;
+
+}
+
+
+.product-title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-style: italic;
+
+    font-size: 1.2rem;
+    font-weight:bold;
+    margin-top: 10px;
+    color: #333;
+}
+.product-price {
+    font-size: 30px;
+    color: #28a745; /* Green */
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+.add-to-cart{
+    background-color: blue;
+    width:300px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.add-to-cart:hover{
+    background-color: rgb(222, 161, 182);
+    transition-duration: 1s;
+
+}
+.h{
+           margin-right: 10px;
+           text-align: center;
+            font-size:30px;
+            color: #e09483; 
+            margin-top: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border: 2px solid wheat;
+            
+          
+}
+    </style>
+</head>
+<body>
+    <div class="h">
+    <h1>Shoppy</h1></div>
+    <div id="container" >
+       
+        
+    </div>
+    <script src="ap.js"></script>
+    
+</body>
+</html>

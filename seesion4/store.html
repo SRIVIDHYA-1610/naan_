@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body {
+        width: 90%;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+      }
+      .product-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        padding: 20px;
+        height: auto;
+        border: 2px solid black;
+        transition: all 0.5s ease-in-out;
+        width: 80%;
+      }
+      .product-card img {
+        width: 180px; /* Adjust image size */
+        height: auto;
+        border-radius: 10px;
+      }
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-end;
+        direction: rtl;
+      }
+      .product-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        margin: 0;
+      }
+      .product-description {
+        font-size: 16px;
+        color: black;
+        margin: 5px 0;
+      }
+      .product-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+      .add-to-cart {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        text-align: center;
+      }
+      .add-to-cart:hover {
+        background-color: darkblue;
+      }
+
+</style>
+
+<body>
+  <div id="container"></div>
+    <script src="store.js"></script>
+    
+</body>
+</html>
